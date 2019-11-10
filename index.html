@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>firstSite</title>
+    <link href="assets/css/resetCSS.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="siteContainer">
+
+    <div class="background">
+        <header class="backgroundHead">
+            <img src="assets/images/tree.jpeg" alt="tree">
+        </header>
+
+        <div class="backgroundEverythingAfterHead">
+
+        </div>
+    </div>
+
+    <nav class="navigation">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="logo">
+        </div>
+        <div class="buttons flexButtons">
+            <a href="#"><img src="assets/images/buttons/magnifying-glass.png" alt="button1"></a>
+            <a href="#"><img src="assets/images/buttons/notification.png" alt="button2"></a>
+            <a href="#"><img src="assets/images/buttons/menu-button.png" alt="button3"></a>
+
+
+        </div>
+
+
+    </nav>
+
+    <div class="foreground">
+        
+        <header class="headOfSite">
+            <div class="photoCamera">
+                <img src="assets/images/camera.jpg" alt="photo-camera">
+            </div>
+            <div class="greenButton">
+                <h4>+ ⠀⠀POST A QUESTION/POLL</h4>
+            </div>
+
+
+
+        </header>
+
+        <main class="siteInformation flexInformationContainer">
+
+            <!--Check-->
+            <input id="showUserCardButton" type="checkbox" style="display: none">
+            <label for="showUserCardButton" class="closeUserCard">
+
+            </label>
+            <!--Check-->
+            <div class="userCardContainer flexUserCardContainer">
+                <div class="userAvatar">
+                    <img src="assets/images/avatar.jpg" alt="avatar">
+
+                </div>
+                <div class="photoCamera2">
+                    <img src="assets/images/camera.jpg" alt="photo-camera">
+                </div>
+
+                <!-- ПРИВЕТ ВСЕМ НА СТРИММЕ
+                Стайлы в тесксе это ужастно, больше так делать не буду)))
+                -->
+
+                <div class="userInformation">
+                    <h4>Meghan Rivera</h4>
+                    <h4 style="margin-top: 8px">▽ Zeeland</h4>
+                    <h4 style="color: black;margin-left: -120px; margin-top: 40px">SCORE</h4>
+                    <h4 style="font-size: 35px; margin-left: -120px; margin-top: 10px">242</h4>
+                    <h4 style="margin-left: 50px; margin-top: -20px">+15 this week</h4>
+                    <h4 style="color: black;margin-left: -108px; margin-top: 40px">BADGES</h4>
+                    <div class="userIconsContainer flexUserIconsContainer">
+                        <div class="iconsWithText">
+                            <div class="icons">
+                                <img src="assets/images/icons/penguin.png" alt="icon">
+                            </div>
+                            <h4>Collo</h4>
+                        </div>
+                        <div class="iconsWithText">
+                            <div class="icons">
+                                <img src="assets/images/icons/mouth.png" alt="icon">
+                            </div>
+                            <h4>Miss Spice</h4>
+                        </div>
+                        <div class="iconsWithText">
+                            <div class="icons">
+                                <img src="assets/images/icons/glasses.png" alt="icon">
+                            </div>
+                            <h4>Girl Boss</h4>
+                        </div>
+                        <div class="iconsWithText">
+                            <div class="icons">
+                                <img src="assets/images/icons/reading-glasses.png" alt="icon">
+                            </div>
+                            <h4>Style Spay</h4>
+                        </div>
+
+                    </div>
+                    <h4 style="font-size: 10px; color: #CC3C6D; text-decoration: underline; margin-left: -110px; margin-top: 25px; cursor: pointer">See all bhadges</h4>
+
+                </div>
+                <div class="bottomOfUserCard">
+                    <h4 style="margin-left: 40px; margin-top: 12px; color: white; font-size: 15px; cursor: pointer">View profile as ></h4>
+                </div>
+            </div>
+
+            <div class="informationContainer">
+                <div class="navigationInContainer flexInNavigation">
+                    <!--Check-->
+                    <label for="showUserCardButton" class="openUserInformation">
+                        <img src="assets/images/user.png" alt="userInfo">
+                    </label>
+                    <!--Check-->
+
+                    <!-- Навигация должна быть в теге li))) -->
+
+                    <div class="textButton redBottom">
+                        <a href="#"  style="font-weight: 600; white-space: pre">Your posts</a>
+                    </div>
+                    <div class="textButton">
+                        <a href="#">Liked posts</a>
+                    </div>
+                    <div class="textButton">
+                        <a href="#">Saved posts</a>
+                    </div>
+                </div>
+                <hr style="width: 770px; margin-top: -85px; margin-bottom: 20px; margin-right: 0">
+
+                <div class="textPlusButton flexTextPlusButton">
+                    <h4>Show</h4>
+                    <div class="showAllButton">
+                        <div class="whiteSide">
+                            <h4>All Posts</h4>
+                        </div>
+                        <div class="pinkSide">
+                            <h4>^</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="postsInContainer flexPostsInContainer">
+                    <div class="post flexPost">
+                        <div class="postTop flexTopPost">
+                            <div class="smallAvatar">
+                                <img src="assets/images/avatar.jpg" alt="smallAvatar">
+                            </div>
+                            <div class="userName">
+                                <h4 style="font-weight: 600">Elena Elenovna</h4>
+                                <h6>15 minute</h6>
+                            </div>
+                            <div class="textBeforeButton">
+                                <a href="#" style="margin: 0"><img src="assets/images/postIcons/like.png" alt="button1"></a>
+                                <h4 style="margin: 0">Work</h4>
+                            </div>
+                            <div class="someButtons">
+
+                                <a href="#" style="margin-left: 30px"><img src="assets/images/postIcons/menu.png" alt="button2" style="opacity: 0.5"></a>
+                            </div>
+
+                        </div>
+
+                        <div class="textInPost">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, commodi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laboriosam magnam natus, nulla quam quis quisquam ratione? Consequatur facilis, magni.</h4>
+                        </div>
+
+                        <div class="postBottom flexBottomPost">
+                            <div class="retweet">
+                            <a href="#" style="opacity: 0.4;"><img src="assets/images/postIcons/retweet.png" alt="button1"></a>
+                            <h4>24 answers</h4>
+                            </div>
+
+                            <div class="someButtons flexBottomPost">
+
+                                <a href="#"><img src="assets/images/postIcons/heart.png" alt="button1"></a>
+                                <a href="#"><img src="assets/images/postIcons/share.png" alt="button2"></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="post flexPost">
+                        <div class="postTop flexTopPost">
+                            <div class="smallAvatar">
+                                <img src="assets/images/avatar.jpg" alt="smallAvatar">
+                            </div>
+                            <div class="userName">
+                                <h4 style="font-weight: 600">Elena Elenovna</h4>
+                                <h6>15 minute</h6>
+                            </div>
+                            <div class="textBeforeButton">
+                                <a href="#" style="margin: 0"><img src="assets/images/postIcons/like.png" alt="button1"></a>
+                                <h4 style="margin: 0">Work</h4>
+                            </div>
+                            <div class="someButtons">
+
+                                <a href="#" style="margin-left: 30px"><img src="assets/images/postIcons/menu.png" alt="button2" style="opacity: 0.5"></a>
+                            </div>
+
+                        </div>
+
+                        <div class="textInPost">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, commodi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laboriosam magnam natus, nulla quam quis quisquam ratione? Consequatur facilis, magni.</h4>
+                        </div>
+
+                        <div class="postBottom flexBottomPost">
+                            <div class="retweet">
+                                <a href="#" style="opacity: 0.4;"><img src="assets/images/postIcons/retweet.png" alt="button1"></a>
+                                <h4>24 answers</h4>
+                            </div>
+
+                            <div class="someButtons flexBottomPost">
+
+                                <a href="#"><img src="assets/images/postIcons/heart.png" alt="button1"></a>
+                                <a href="#"><img src="assets/images/postIcons/share.png" alt="button2"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post flexPost">
+                        <div class="postTop flexTopPost">
+                            <div class="smallAvatar">
+                                <img src="assets/images/avatar.jpg" alt="smallAvatar">
+                            </div>
+                            <div class="userName">
+                                <h4 style="font-weight: 600">Elena Elenovna</h4>
+                                <h6>15 minute</h6>
+                            </div>
+                            <div class="textBeforeButton">
+                                <a href="#" style="margin: 0"><img src="assets/images/postIcons/like.png" alt="button1"></a>
+                                <h4 style="margin: 0">Work</h4>
+                            </div>
+                            <div class="someButtons">
+
+                                <a href="#" style="margin-left: 30px"><img src="assets/images/postIcons/menu.png" alt="button2" style="opacity: 0.5"></a>
+                            </div>
+
+                        </div>
+
+                        <div class="textInPost">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, commodi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laboriosam magnam natus, nulla quam quis quisquam ratione? Consequatur facilis, magni.</h4>
+                        </div>
+
+                        <div class="postBottom flexBottomPost">
+                            <div class="retweet">
+                                <a href="#" style="opacity: 0.4;"><img src="assets/images/postIcons/retweet.png" alt="button1"></a>
+                                <h4>24 answers</h4>
+                            </div>
+
+                            <div class="someButtons flexBottomPost">
+
+                                <a href="#"><img src="assets/images/postIcons/heart.png" alt="button1"></a>
+                                <a href="#"><img src="assets/images/postIcons/share.png" alt="button2"></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </main>
+
+    </div>
+</div>
+</body>
+</html>

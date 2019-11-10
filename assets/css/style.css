@@ -1,0 +1,602 @@
+body {
+    background-color: gray;
+    min-height: 100vh;
+}
+
+body * {
+    margin: 0 auto;
+    box-sizing: border-box;
+
+
+
+
+}
+
+.siteContainer {
+    max-width: 1200px;
+    min-width: 320px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+
+}
+
+.foreground {
+    width: 90%;git
+    background-color: white;
+    z-index: 200;
+    margin-bottom: 0;
+    position: relative;
+
+
+
+
+}
+
+.background {
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+
+
+}
+
+.navigation {
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    justify-content: flex-start;
+
+
+
+}
+
+.headOfSite {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-image: url("../images/tree.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.photoCamera {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-right: 15px;
+    margin-top: 80px;
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+
+.photoCamera > img {
+    width: 35px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.photoCamera2 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-right: 70px;
+    margin-top: -40px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.photoCamera2 > img {
+    width: 35px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.greenButton {
+    position: relative;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #07C5A4;
+    margin-right: 20px;
+    margin-top: 80px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.greenButton > h4 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+
+
+.backgroundHead {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.backgroundHead > img {
+    width: 100%;
+    height: 100%;
+    filter: blur(20px);
+}
+
+.backgroundEverythingAfterHead {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+
+
+
+.logo {
+    width: 85px;
+    height: 50px;
+    overflow: hidden;
+    margin: 0;
+
+
+}
+
+.logo > img {
+    width: 85px;
+    height: 50px;
+
+
+}
+
+.buttons {
+    margin-right: 0;
+    width: 200px;
+    overflow: hidden;
+}
+
+.buttons > a > img {
+    width: 25px;
+    height: 25px;
+}
+
+.flexButtons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.siteInformation {
+    width: 100%;
+    height: 100%;
+}
+
+.flexInformationContainer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.userCardContainer{
+    max-width: 250px;
+    min-width: 250px;
+    width: 100%;
+    background-color: #EC4980;
+    margin: 0;
+    position: relative;
+}
+
+.flexUserCardContainer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.userAvatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -75px;
+}
+
+.userAvatar > img {
+    width: 150px;
+    height: 200px;
+}
+
+.informationContainer {
+    width: 100%;
+}
+
+.navigationInContainer {
+    width: 100%;
+    height: 150px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.openUserInformation {
+    position: absolute;
+    overflow: hidden;
+    margin: 15px 0px;
+    display: none;
+    z-index: 10000;
+}
+
+
+.openUserInformation > img {
+    width: 30px;
+    height: 30px;
+}
+
+.closeUserCard {
+    position: absolute;
+    z-index: 9998;
+    width: 2000px;
+    height: 2000px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+
+
+
+/*Check*/
+
+
+
+
+#showUserCardButton:checked ~ .closeUserCard {
+    display: block;
+}
+
+
+.flexInNavigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.textButton {
+    margin: 20px 15px;
+}
+
+.textButton > a {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial;
+    color: black;
+}
+
+.
+
+.textPlusButton {
+    height: 80px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.textPlusButton > h4, .showAllButton {
+    margin: 0;
+}
+
+.textPlusButton > h4 {
+    align-self: center;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.flexTextPlusButton {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.showAllButton {
+    display: flex;
+    width: 120px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.whiteSide {
+
+    background-color: #EBEBEB;
+    margin: 0;
+    padding: 9px;
+    flex-grow: 1;
+}
+
+.whiteSide > h4 {
+    font-family: Arial;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.pinkSide {
+    background-color: #E1608C;
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+
+}
+
+.pinkSide > h4{
+    transform: rotate(180deg);
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+.postsInContainer {
+    width: 100%;
+
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.flexPostsInContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+
+.post {
+    width: 380px;
+    border: 0.5px solid gainsboro;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.flexPost {
+    display: flex;
+    flex-direction: column;
+}
+
+.siteInformation {
+    width: 100%;
+    height: 100%;
+}
+
+.userInformation {
+    width: 100%;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.postTop {
+    width: 100%;
+    height: 50px;
+    padding: 15px 0px 15px 15px;
+}
+
+.flexTopPost {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.smallAvatar {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+ .smallAvatar > img {
+     width: 30px;
+     height: 30px;
+ }
+
+ .userName {
+     font-size: small;
+     margin-left: 10px;
+
+ }
+
+ .someButtons {
+     width: 70px;
+     overflow: hidden;
+     margin: 0;
+     padding: 5px;
+
+
+ }
+
+ .someButtons > a > img {
+     width: 20px;
+     height: 20px;
+     opacity: 0.4;
+ }
+
+ .retweet {
+     color: #CC3C6D;
+     font-size: 15px;
+     margin-left: 10px;
+ }
+
+ .retweet * {
+     display: inline-block;
+ }
+
+ .retweet > a > img {
+     width: 30px;
+     height: 30px;
+ }
+
+ .textInPost {
+     padding: 20px;
+     margin: 0;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 17px;
+     flex-grow: 1;
+ }
+
+.postBottom {
+    width: 100%;
+    height: 50px;
+    background-color: #F4F4F4;
+
+}
+
+.postBottom > a > img {
+    width: 30px;
+    height: 30px;
+    margin-left: -170px;
+
+}
+
+ .flexBottomPost {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+
+ }
+
+ .bottomOfUserCard {
+     width: 100%;
+     height: 50px;
+     background-color: #CC3C6D;
+ }
+
+ .userInformation {
+     text-align: center;
+     width: 100%;
+     color: white;
+     margin-top: 20px;
+ }
+
+ .userIconsContainer {
+     width: 100%;
+     height: 170px;
+     padding: 20px;
+ }
+
+ .flexUserIconsContainer {
+     display: flex;
+     justify-content: flex-start;
+     flex-wrap: wrap;
+ }
+
+ .icons {
+     width: 45px;
+     height: 45px;
+     background-color: white;
+     border-radius: 50%;
+     object-fit: cover;
+     overflow: hidden;
+     margin: 0;
+     margin-bottom: 5px;
+     padding: 5px;
+     cursor: pointer;
+ }
+
+ .icons > img {
+     width: 35px;
+     height: 35px;
+ }
+
+ .iconsWithText {
+     width: 50px;
+     height: 80px;
+     font-size: 10px;
+     text-align: center;
+     margin: 5px;
+     margin-bottom: 0;
+     padding-left: 2px;
+ }
+
+.redBottom {
+    border-bottom: 4px solid #CC3C6D;
+    padding-bottom: 26px;
+    margin-left: 35px;
+}
+
+.textWithButton {
+    width: 170px;
+    height: 30px;
+    margin-right: 0;
+}
+
+
+.textBeforeButton {
+    width: 70px;
+    height: 20px;
+    font-size: 12px;
+    background-color: #F4F4F4;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: -35px;
+
+}
+
+.textBeforeButton > a > img {
+    width: 10px;
+    height: 10px;
+}
+
+@media screen and (max-width: 724px) {
+    .userCardContainer {
+        position: absolute;
+        left: -350px;
+        transition-property: left;
+        transition-duration: 0.2s;
+    }
+
+    .navigation {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .buttons {
+        width: 120px;
+    }
+
+    .openUserInformation {
+        display: block;
+    }
+
+
+    #showUserCardButton:checked ~ .userCardContainer {
+        left: 0;
+        z-index: 9999;
+    }
+
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 1188px) {
+    .flexTextPlusButton {
+        justify-content: flex-start;
+        margin-left: 30px;
+    }
+
+}
